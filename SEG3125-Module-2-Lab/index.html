@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>User interface survey</title>
+<link rel="stylesheet" type="text/css" href="https://raw.githack.com/kli081/survey.github.io/main/_styles.css" media="screen" />
+</head>
+<body>
+	
+	<form>
+		<fieldset>
+			<legend>Website fffff and image</legend>
+			<label for="weblink">url:</label>
+            <a href="https://www.amazon.com/?language=en_US" target="_blank">https://www.amazon.com/</a>
+            <p style="margin-top: 10px;">Website imgage:</p>
+            <img src="amz.png" />
+			
+		</fieldset>
+
+		<fieldset>
+			<legend>Personal information</legend>
+			<p>Your name:</p>
+			<input type="text" required/> <span class="red">*</span>
+
+			<p>Gender:</p>
+			<p><input type="radio" value="male"  name="male" /> <label for="male">Male</label></p>
+			<p><input type="radio" value="female" name="female" /> <label for="female">Female</label></p>
+
+			<p>Phone number:</p>
+			<input type="text" required /> <span class="red">*</span>
+
+			<p>Home address:</p>
+			<input type="text" />
+
+		</fieldset>
+		
+		<fieldset>
+			<legend>Questions</legend>
+
+			<p>Have you visited this website ？</p>
+			<p><input type="radio" value="yes" id="check" name="check" /> <label for="check">Yes</label></p>
+			<p><input type="radio" value="no" id="check_no" name="check" /> <label for="check">No</label></p>
+
+            <p>How much have you spent on this website ?</p>
+            <select>
+                <option>0-1000</option>
+                <option>1000-5000</option>
+                <option>5000-10000</option>
+            </select>
+			
+            <p></p>
+
+			<p>What do you like to buy？</p>
+			<p><input type="checkbox" value="check" id="electronic" /> <label for="electronic">Electronic product</label></p>
+			<p><input type="checkbox" value="check" id="food" /> <label for="food">Fruit food</label></p>
+			<p><input type="checkbox" value="check" id="clothes" /> <label for="clothes">clothes</label></p>
+			<p><input type="checkbox" value="Other" id="other" /> <label for="other">Other</label></p>
+
+            <p>Suggestions for website improvement:</p>
+            <textarea cols="50" rows="3"></textarea>
+			
+		</fieldset>
+		
+        <fieldset>
+            <button type="submit">Submit</button>
+        </fieldset>
+	</form>
+
+<div style="text-align:center;clear:both">
+<p>Website designed by Keng Li</p>
+</div>
+</body>
+</html>
