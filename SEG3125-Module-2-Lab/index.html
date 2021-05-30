@@ -1,72 +1,60 @@
 <!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>User interface survey</title>
-<link rel="stylesheet" type="text/css" href="https://raw.githack.com/kli081/survey.github.io/main/_styles.css" media="screen" />
+  <title>Keng Li's grocery store</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-	
-	<form>
-		<fieldset>
-			<legend>Website fffff and image</legend>
-			<label for="weblink">url:</label>
-            <a href="https://www.amazon.com/?language=en_US" target="_blank">https://www.amazon.com/</a>
-            <p style="margin-top: 10px;">Website imgage:</p>
-            <img src="amz.png" />
-			
-		</fieldset>
 
-		<fieldset>
-			<legend>Personal information</legend>
-			<p>Your name:</p>
-			<input type="text" required/> <span class="red">*</span>
+<h4>Keng Li's grocery store</h5>
 
-			<p>Gender:</p>
-			<p><input type="radio" value="male"  name="male" /> <label for="male">Male</label></p>
-			<p><input type="radio" value="female" name="female" /> <label for="female">Female</label></p>
-
-			<p>Phone number:</p>
-			<input type="text" required /> <span class="red">*</span>
-
-			<p>Home address:</p>
-			<input type="text" />
-
-		</fieldset>
-		
-		<fieldset>
-			<legend>Questions</legend>
-
-			<p>Have you visited this website ？</p>
-			<p><input type="radio" value="yes" id="check" name="check" /> <label for="check">Yes</label></p>
-			<p><input type="radio" value="no" id="check_no" name="check" /> <label for="check">No</label></p>
-
-            <p>How much have you spent on this website ?</p>
-            <select>
-                <option>0-1000</option>
-                <option>1000-5000</option>
-                <option>5000-10000</option>
-            </select>
-			
-            <p></p>
-
-			<p>What do you like to buy？</p>
-			<p><input type="checkbox" value="check" id="electronic" /> <label for="electronic">Electronic product</label></p>
-			<p><input type="checkbox" value="check" id="food" /> <label for="food">Fruit food</label></p>
-			<p><input type="checkbox" value="check" id="clothes" /> <label for="clothes">clothes</label></p>
-			<p><input type="checkbox" value="Other" id="other" /> <label for="other">Other</label></p>
-
-            <p>Suggestions for website improvement:</p>
-            <textarea cols="50" rows="3"></textarea>
-			
-		</fieldset>
-		
-        <fieldset>
-            <button type="submit">Submit</button>
-        </fieldset>
-	</form>
-
-<div style="text-align:center;clear:both">
-<p>Website designed by Keng Li</p>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Personal data</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Personal Data Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose a Category:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices()">
+    <option value=""></option>
+    <option value="lactose_intolerant">lactose-intolerant</option>
+    <option value="nut_allergies">nut allergies</option>
+    <option value="None">None</option>
+	</select>
+  <br/>
+  Preference for organic products:
+  <select id="organicSelect" name="organicSelect" onchange="populateListProductChoices()">
+    <option value=""></option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+  </select>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<h5>Website designed by Keng Li</p>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
 </body>
 </html>
