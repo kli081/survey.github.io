@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<h2>Keng Li's grocery store</h2>
+
+<div class="nav">
+  <a href="#" id="home" class="navlinks" onclick="openCity(event, 'Client')"><i class="fa fa-fw fa-user"></i> Personal data</a> 
+  <a href="#" class="navlinks" onclick="openCity(event, 'Products')"><i class="fa fa-fw fa-home"></i> Products</a> 
+  <a href="#" class="navlinks" onclick="openCity(event, 'Cart')"><i class="fa fa-fw fa-shopping-cart"></i> Cart</a>
+</div>
+
+<div id="Client" class="navcontent">
+    <h3>Personal Data Information</h3>
+    <p>Tell us a bit about you.</p>
+      Choose a Category:
+      <p></p>
+      <label class="container category">None
+        <input type="radio" checked="checked" name="category" value="None" onchange="populateListProductChoices()">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container category">lactose-intolerant
+        <input type="radio" name="category" value="lactose_intolerant" onchange="populateListProductChoices()">
+        <span class="checkmark" ></span>
+      </label>
+      <label class="container category">nut allergies
+        <input type="radio" name="category" value="nut_allergies" onchange="populateListProductChoices()">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container category">electronic product
+        <input type="radio" name="category" value="electronic_product" onchange="populateListProductChoices()">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container category">tik tok same style
+        <input type="radio" name="category" value="Tik_Tok_Same_Style" onchange="populateListProductChoices()">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container category">organic product
+        <input type="radio" name="category" value="organic_product" onchange="populateListProductChoices()">
+        <span class="checkmark"></span>
+      </label>
+</div>
+
+<div id="Products" class="navcontent">
+    <h3>Your targeted products</h3>
+    <p>We preselected products based on your restrictions.</p>
+       Choose items to buy:
+       <p></p>
+       <div id="displayProduct"></div>
+       <button id="addCart" type="button" class="block btn" onclick="selectedItems()">
+         <i class="fa fa-shopping-cart"></i> Add selected items to cart.
+       </button>
+</div>
+
+<div id="Cart" class="navcontent">
+    <h3>Cart</h3>
+    <p>Here is your cart.</p>
+    <div id="displayCart"></div>
+</div>
+
+<div class="clearfix"></div>
+
+
+<h2>Website designed by Keng Li</p>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+   
+</body>
+</html> 
