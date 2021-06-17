@@ -37,7 +37,7 @@ body {
 .side_bar {
   position: fixed;
 
-  bottom: 300px;
+  bottom: 35%;
   right: 0;
 
   z-index: 10000;
