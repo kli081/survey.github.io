@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>physiotherapy clinic</title>
+</head>
+
+<body>
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 py-4">
+          <h4 class="text-white">Information</h4>
+          <ul class="list-unstyled">
+            <li><span class="text-light-white">Keng Li physiotherapy clinic</span></li>
+            <li><span class="text-light-white">Monday-Friday: 8:00 AM - 6:00 PM</span></li>
+            <li><span class="text-light-white">Saturday: 8:00 AM - 12noon</span></li>
+            <li><span class="text-light-white">Ottawa, ON</span></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 py-4">
+          <h4 class="text-white">Service Area</h4>
+          <ul class="list-unstyled">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-light-white" width="17" height="17"
+                   fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+              <span class="text-light-white">Ottawa</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-light-white" width="17" height="17"
+                   fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+              <span class="text-light-white">Billings Bridge</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-light-white" width="17" height="17"
+                   fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+              <span class="text-light-white">Alta Vista</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-light-white" width="17" height="17"
+                   fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+              <span class="text-light-white">The Glebe</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><span class="text-light-white">Phone: </span><a href="#" class="text-light-white">613-737-8888</a>
+            </li>
+            <li><span class="text-light-white">Fax: </span><a href="#" class="text-light-white">613-737-6666</a></li>
+            <li><span class="text-light-white">Email: </span><a href="#" class="text-light-white">kengli@live.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-telephone"
+             viewBox="0 0 16 16">
+          <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+        </svg>
+        &nbsp;&nbsp;
+        <span>613-737-8888</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+              aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5" id="background">
+      <div class="col-lg-6 col-md10 mx-auto">
+        <h1 class="fw-light">Physiotherapy solutions customized for you</h1>
+        <p class="lead text-muted">Welcome to Keng Li physiotherapy clinic, we provide professional and high-quality
+          care, and customize the best physiotherapy solutions for you to solve orthopedics, nervous system and aging
+          related problems. We have professional physiotherapists who provide one-to-one services to patients. There
+          are many stores in Ottawa, and we can provide on-site service in time if you have any questions.</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="container" id="service">
+    <div class="row">
+      <p class="lead text-muted">
+        KengLi's registered physiotherapists can provide services with:
+      </p>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Physiotherapist</th>
+          <th scope="col">Cost</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Neck Pain</td>
+          <td>Mathew Pulickal</td>
+          <td>$ 199</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Shoulder Pain</td>
+          <td>NISHANTH KUMAR, FCAMPT</td>
+          <td>$ 199</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Balance or Mobility Issues</td>
+          <td>NICK ANTAYA</td>
+          <td>$ 199</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>An ADP Assessment</td>
+          <td>AMÉLIE BOILEAU</td>
+          <td>$ 199</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Parkinson’s Disease</td>
+          <td>RONI EL-HADDAD</td>
+          <td>$ 199</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Sports Injury</td>
+          <td>KIRSTIE GILLANDERS, FCAMPT</td>
+          <td>$ 199</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="album py-5 bg-light" id="album">
+    <div class="container" id="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava1.jpeg" class="avator" />
+
+            <div class="card-body">
+              <p class="card-text">Mathew Pulickal is a registered physiotherapist in Ottawa and has a widespread
+                background in the treatment and rehabilitation of numerous injuries, chronic pain issues.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava2.jpeg" class="avator" />
+
+            <div class="card-body">
+              <p class="card-text">NICK ANTAYA is interested in the fields of sports and orthopedic physiotherapy, He
+                has completed his level 3 certifications in both the upper and lower quadrants from the Canadian
+                Academy of Manipulative Therapy. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava3.jpeg" class="avator" />
+
+            <div class="card-body">
+              <p class="card-text">AMÉLIE BOILEAU has completed her Level 1, Level 2 Upper Quadrant, Level 2 Lower
+                Quadrant and the Level 3 Lower Quadrant within the Orthopaedic Division of the Canadian Physiotherapy
+                Association. </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava4.jpeg" class="avator" />
+
+            <div class="card-body">
+              <p class="card-text">RONI EL-HADDAD recently graduated from the University of Toronto with a Master of
+                Science in Physical Therapy. He obtained an Honours Bachelor of Science degree with specialization in
+                Human Kinetics from the University of Ottawa.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava5.jpeg" class="avator" />
+
+            <div class="card-body">
+              <p class="card-text">
+                KIRSTIE GILLANDERS, FCAMPT is a graduate of the Masters of Science in Physical Therapy program at the
+                University of Toronto. She previously attained her BSc in Human Kinetics from the University of Ottawa
+                in 2011.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="image/ava6.jpeg" class="avator" />
+            <div class="card-body">
+              <p class="card-text">NISHANTH KUMAR, FCAMPT has been a registered physiotherapist since 2007. He is a
+                graduate of McGill University, where he obtained his BSc. PT and was awarded the Clinical Prize of
+                Excellence for his graduating year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="py-5 container">
+    <div class="py-lg-5 row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+
+    </div>
+    <div class="col-md-7 col-lg-8" id="appointment">
+        <p class="lead text-muted">Appointment service: </p>
+        <form class="needs-validation" novalidate>
+          <div class="mb-3">
+            <svg t="1623842265413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2228" width="20" height="20"><path d="M512.007163 65.290005c112.829741 0 204.291826 91.466178 204.291826 204.290803 0 112.819508-91.462085 204.28671-204.291826 204.28671-112.834858 0-204.306152-91.462085-204.306152-204.28671S399.172305 65.290005 512.007163 65.290005L512.007163 65.290005 512.007163 65.290005zM512.007163 65.290005" p-id="2229"></path><path d="M899.442146 896.000767l0 62.709227L124.557854 958.709995l0-62.709227 0-0.010233c0-213.963093 173.46882-387.420657 387.444193-387.420657C725.975373 508.569878 899.442146 682.027441 899.442146 896.000767L899.442146 896.000767 899.442146 896.000767 899.442146 896.000767zM899.442146 896.000767" p-id="2230"></path></svg>
+            <label for="name" class="form-label">Your Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid name is required.
+            </div>
+          </div>
+          <div class="mb-3">
+            <svg t="1623842214473" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1524" width="20" height="20"><path d="M621.40595 714.104975c3.09997 0 21.692792-15.494851 27.889732-18.593822 12.396881-6.197941 21.693792-12.395881 30.989703-15.494851 65.079375-27.889732 120.85884-9.296911 195.234125 80.573227 46.484554 55.780465 58.879435 102.265018 43.385584 145.650601-12.395881 30.989703-40.286613 55.780465-83.671197 80.572227-3.09997 3.09997-27.890732 18.593822-37.187643 21.692792-105.363989 65.078375-350.181638-83.671197-526.820943-343.982698C94.584007 407.30892 48.100453 131.502568 156.563412 63.326222l15.494851-9.296911 15.494852-9.29691c55.781465-34.088673 89.869137-49.583524 130.15575-43.385584 40.286613 6.197941 77.474256 37.187643 105.364989 92.969108 61.979405 117.75887 49.582524 173.540334-30.989703 226.222828-6.197941 3.09897-27.890732 15.494851-27.890732 18.593821-18.593822 12.395881 12.395881 96.067078 92.969107 207.629007 77.473256 117.76087 142.550632 182.838245 164.243424 167.343394z" p-id="1525"></path></svg>
+            <label for="number" class="form-label">Your Number:</label>
+            <input type="tel"  maxlength="11" minlength="10" class="form-control" id="number" placeholder="etc. 1 800 200 6454" value="" required>
+            <div class="invalid-feedback">
+              Please refer to the example to enter the number in the correct format.
+            </div>
+          </div>
+          <div class="mb-3">
+            <svg t="1623842325149" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3076" width="20" height="20"><path d="M315.8 400h392.4c20.3 0 36.8 16.5 36.8 36.8s-16.5 36.8-36.8 36.8H315.8c-20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8zM315.8 252.8h392.4c20.3 0 36.8 16.4 36.8 36.8 0 20.3-16.5 36.8-36.8 36.8H315.8c-20.3 0-36.8-16.4-36.8-36.8 0-20.3 16.5-36.8 36.8-36.8z" fill="#040000" p-id="3077"></path><path d="M513.9 652.9L64 443.6v362.5c0 68.2 55.3 123.6 123.6 123.6h648.8c68.3 0 123.6-55.4 123.6-123.6V435.3l-7.9 2.6-438.2 215z" fill="#040000" p-id="3078"></path><path d="M203.1 231.7c0-25.3 20.5-45.8 45.8-45.8h526.3c25.3 0 45.8 20.5 45.8 45.8v199.1l91.5-42.7V185.9c0-50.5-41-91.5-91.5-91.5H203.1c-50.6 0-91.5 41-91.5 91.5v209.2l91.5 40.7V231.7z" fill="#040000" p-id="3079"></path></svg>
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <svg t="1623842390788" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4681" width="20" height="20"><path d="M878.262839 1023.812389h-742.251735a54.261161 54.261161 0 0 1-48.374337-85.998821l37.624484-53.749264A82.159589 82.159589 0 0 1 179.266464 862.564599h661.37189a56.564701 56.564701 0 0 1 48.374338 25.594887l37.624484 53.749264c25.594887 32.249558 0 80.623895-48.374337 80.623895z m0 0" p-id="4682"></path><path d="M754.639533 104.188084a346.042878 346.042878 0 0 0-483.999321-10.749852l-10.749853 10.749852a367.286634 367.286634 0 0 0 0 505.499027l247.502561 252.877488 247.246613-252.877488a367.286634 367.286634 0 0 0 0-505.499027z m-247.246613 365.750942a107.498527 107.498527 0 1 1 107.498527-107.498527 107.754476 107.754476 0 0 1-107.498527 107.498527z m0 0" p-id="4683"></path></svg>
+            <label>Area:</label>
+            <select class="form-select">
+              <option value="1">Ottawa</option>
+              <option value="2">Billings Bridge</option>
+              <option value="3">Alta Vista</option>
+              <option value="4">The Glebe</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <svg t="1623842438286" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5619" width="20" height="20"><path d="M511.15 63.855c-246.39 0-446.143 199.686-446.143 446.078 0 246.386 199.754 446.106 446.142 446.106 246.357 0 446.077-199.72 446.077-446.106 0-246.392-199.72-446.078-446.077-446.078z m223.108 495.311h-236.87c-5.01 0-9.819-0.997-14.23-2.87-13.09-5.543-22.317-18.54-22.317-33.669V285.755c0-20.205 16.368-36.575 36.547-36.575 20.247 0 36.614 16.37 36.614 36.575v200.257h200.256c20.212 0 36.575 16.368 36.575 36.58 0 20.206-16.368 36.574-36.575 36.574z m0 0" p-id="5620"></path></svg>
+            <label>Arrival time:</label>
+            <select class="form-select" name="" id="selTime" required>
+              <option value="">----Select----</option>
+            </select>
+
+            <div class="invalid-feedback">
+              Please select a valid time.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <svg t="1623842469408" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6446" width="20" height="20"><path d="M753.266187 77.352518A270.218129 270.218129 0 0 0 512 230.510504 270.218129 270.218129 0 0 0 270.733813 77.352518C121.480288 77.352518 0 203.105612 0 357.663309c0 240.750504 257.841727 460.431655 498.444892 585.669065a29.467626 29.467626 0 0 0 27.110216 0c240.971511-125.23741 498.444892-344.918561 498.444892-585.669065 0-154.557698-121.480288-280.310791-270.733813-280.310791z m-3.90446 414.756835L533.364029 719.746763a29.467626 29.467626 0 0 1-42.728058 0L274.638273 492.109353a29.467626 29.467626 0 1 1 42.728058-40.517986L512 656.686043 706.633669 451.591367a29.467626 29.467626 0 1 1 42.728058 40.517986z" fill="#333333" p-id="6447"></path></svg>
+            <label>Service:</label>
+            <select class="form-select" name="" id="selService" required>
+              <option value="">----Select----</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid service.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <svg t="1623842530578" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7633" width="20" height="20"><path d="M409.152 461.952h-85.248c-10.208 0-19.904 0-29.152 0.832 9.664 57.28 52.608 204.64 237.856 206.784a18.208 18.208 0 0 1 9.088 0.224c30.816-0.032 185.888-12.128 223.488-201.248-18.88-4.512-40.224-6.592-64.384-6.592h-89.472c72.288-37.728 121.792-112.576 121.792-199.296 0-7.104-0.352-14.528-0.992-21.408h-126.08a129.792 129.792 0 0 0 35.008-71.68h71.968a223.36 223.36 0 0 0-107.584-108.992A129.536 129.536 0 0 0 512.224 21.12a129.664 129.664 0 0 0-89.92 36.192A223.456 223.456 0 0 0 307.36 169.6h76.032c3.904 27.584 16.544 52.48 35.04 71.68H288.256c-0.64 6.88-0.992 14.304-0.992 21.408 0 86.688 49.536 161.568 121.888 199.264z m103.072-404.544a93.92 93.92 0 0 1 93.792 93.824 93.888 93.888 0 0 1-93.792 93.76 93.856 93.856 0 0 1-93.824-93.76 93.888 93.888 0 0 1 93.824-93.824z" fill="" p-id="7634"></path><path d="M907.712 666.368s6.944-135.456-107.008-186.336c-44.128 221.024-236.096 234.368-261.888 234.688a25.568 25.568 0 0 0-1.184 7.104c-0.32 15.616 13.12 35.552 37.92 56.192 44.096 36.704 52.8 89.888 22.176 135.328-23.84 35.392-68.608 60.032-123.424 60.032-26.4 0-55.104-5.728-84.928-18.688a49.824 49.824 0 1 1 12.896-34.048c74.208 32.896 138.464 12.352 165.344-27.584 20.064-29.888 14.368-62.4-15.328-87.136-34.848-29.024-52-57.952-50.944-85.92 0.064-2.368 0.32-4.672 0.64-6.848-188.512-17.888-233.344-183.744-243.456-244.864-143.936 34.816-142.784 184.128-143.04 198.08l0.096 352.128h792.8l-0.672-352.128z" fill="" p-id="7635"></path><path d="M512.224 151.2m-43.328 0a43.328 43.328 0 1 0 86.656 0 43.328 43.328 0 1 0-86.656 0Z" fill="" p-id="7636"></path></svg>
+            <label>Doctor:</label>
+            <select class="form-select" name="" id="selDr" required>
+              <option value="">----Select----</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid doctor.
+            </div>
+          </div>
+          <p></p>
+          <button class="btn btn-primary" id="mybutton" type="button">submit</button>
+
+        </form>
+      </div>
+
+    </div>
+    <div class="py-lg-5 row g-5" style="display: none;" id="add_div">
+      <div class="col-md-7 col-lg-8">
+
+        <h4 class="mb-3">Billing Form</h4>
+        <form class="needs-validation1" novalidate>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$199</strong>
+          </li>
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <a title="To facilitate payment, please show your card names">
+                <svg t="1623842841516" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9476" width="17" height="17"><path d="M512 81.408a422.4 422.4 0 1 0 422.4 422.4A422.4 422.4 0 0 0 512 81.408z m26.624 629.76a45.056 45.056 0 0 1-31.232 12.288 42.496 42.496 0 0 1-31.232-12.8 41.984 41.984 0 0 1-12.8-30.72 39.424 39.424 0 0 1 12.8-30.72 42.496 42.496 0 0 1 31.232-12.288 43.008 43.008 0 0 1 31.744 12.288 39.424 39.424 0 0 1 12.8 30.72 43.008 43.008 0 0 1-13.312 31.744z m87.04-235.52a617.472 617.472 0 0 1-51.2 47.104 93.184 93.184 0 0 0-25.088 31.232 80.896 80.896 0 0 0-9.728 39.936v10.24H475.648v-10.24a119.808 119.808 0 0 1 12.288-57.344A311.296 311.296 0 0 1 555.52 460.8l10.24-11.264a71.168 71.168 0 0 0 16.896-44.032A69.632 69.632 0 0 0 563.2 358.4a69.632 69.632 0 0 0-51.2-17.92 67.072 67.072 0 0 0-58.88 26.112 102.4 102.4 0 0 0-16.384 61.44h-61.44a140.288 140.288 0 0 1 37.888-102.4 140.8 140.8 0 0 1 104.96-38.4 135.68 135.68 0 0 1 96.256 29.184 108.032 108.032 0 0 1 36.352 86.528 116.736 116.736 0 0 1-25.088 73.216z" fill="" p-id="9477"></path></svg>
+              </a>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <a title="To facilitate payment, please show your card number"><svg t="1623842841516" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9476" width="17" height="17"><path d="M512 81.408a422.4 422.4 0 1 0 422.4 422.4A422.4 422.4 0 0 0 512 81.408z m26.624 629.76a45.056 45.056 0 0 1-31.232 12.288 42.496 42.496 0 0 1-31.232-12.8 41.984 41.984 0 0 1-12.8-30.72 39.424 39.424 0 0 1 12.8-30.72 42.496 42.496 0 0 1 31.232-12.288 43.008 43.008 0 0 1 31.744 12.288 39.424 39.424 0 0 1 12.8 30.72 43.008 43.008 0 0 1-13.312 31.744z m87.04-235.52a617.472 617.472 0 0 1-51.2 47.104 93.184 93.184 0 0 0-25.088 31.232 80.896 80.896 0 0 0-9.728 39.936v10.24H475.648v-10.24a119.808 119.808 0 0 1 12.288-57.344A311.296 311.296 0 0 1 555.52 460.8l10.24-11.264a71.168 71.168 0 0 0 16.896-44.032A69.632 69.632 0 0 0 563.2 358.4a69.632 69.632 0 0 0-51.2-17.92 67.072 67.072 0 0 0-58.88 26.112 102.4 102.4 0 0 0-16.384 61.44h-61.44a140.288 140.288 0 0 1 37.888-102.4 140.8 140.8 0 0 1 104.96-38.4 135.68 135.68 0 0 1 96.256 29.184 108.032 108.032 0 0 1 36.352 86.528 116.736 116.736 0 0 1-25.088 73.216z" fill="" p-id="9477"></path></svg>
+              </a>
+              <input type="tel" minlength="12" maxlength="13" class="form-control" id="cc-number" placeholder="" required>
+
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+          </div>
+
+          <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit" id="checkout">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="side_bar hide">
+    <ul>
+      <li><a href="#background" class="list-group-item d-flex justify-content-between " style="background-color:royalblue;color: white;">Information</a> </li>
+      <li><a href="#service" class="list-group-item d-flex justify-content-between" style="background-color:royalblue;color: white;">Services</a> </li>
+      <li><a href="#album" class="list-group-item d-flex justify-content-between" style="background-color:royalblue;color: white;">Profile</a> </li>
+      <li><a href="#appointment" class="list-group-item d-flex justify-content-between" style="background-color:royalblue;color: white;">Appointment</a> </li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5 bg-light">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <!---页面必加--->
+    <p class="mb-1">Website designed by Keng Li</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="http://lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+
+</html>
